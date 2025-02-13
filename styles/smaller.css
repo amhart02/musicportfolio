@@ -1,5 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
+
+:root {
+  --title-font: "Playfair Display", serif;
+  --body-font: "Montserrat", sans-serif;
+
+  --orange: hsl(30, 74%, 50%);
+  --red: hsl(4, 72%, 53%);
+  --blue: hsl(183, 28%, 59%);
+  --green: hsl(91, 17%, 72%);
+}
 
 body {
   margin: 0 auto;
@@ -11,13 +21,18 @@ body {
   transition: 0.2s ease;
 }
 
+.menu > rect {
+  stroke-width: 1px;
+  stroke: black;
+}
+
 .menu:hover {
   transform: scaleY(1.1);
 }
 
 /* Position the menu toggle button and navigation menu */
 .menu-toggle {
-  position: absolute;
+  position: fixed;
   top: 20px;
   right: 20px;
   background: none;
@@ -28,8 +43,8 @@ body {
 
 .nav-menu {
   display: none;
-  position: absolute;
-  top: 60px; /* Adjust to position below the hamburger icon */
+  position: fixed;
+  top: 75px; /* Adjust to position below the hamburger icon */
   right: 20px; /* Align with the menu button */
   background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
   padding: 15px;
@@ -52,13 +67,13 @@ body {
 .nav-menu a {
   text-decoration: none;
   color: white;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--body-font);
   font-size: 35px;
   transition: 0.2s ease;
 }
 
 .nav-menu a:hover {
-  color: orange;
+  color: var(--orange);
 }
 
 /* Ensure visibility when menu is active */
@@ -94,17 +109,21 @@ header {
   margin: 10%;
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
-.title h1 {
+.title a {
+  text-decoration: none;
+  color: white;
   margin: 0;
+  font-weight: bolder;
   font-size: 60px;
-  font-family: "Playfair Display", serif;
+  font-family: var(--title-font);
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
 .title h2 {
   margin-top: 10px;
   font-size: 30px;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--body-font);
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+  text-align: left;
 }
 .menu {
   width: 50px;
@@ -121,7 +140,7 @@ header p {
   grid-row: 3/4;
   margin: 10%;
   color: white;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--body-font);
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
 
@@ -144,16 +163,16 @@ header p {
 }
 .bio h3 {
   font-size: 50px;
-  font-family: "Playfair Display", serif;
+  font-family: var(--title-font);
 }
 .bio p {
   font-size: 25px;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--body-font);
 }
 
 .bio-read-more {
   text-decoration: none;
-  font-family: "Playfair Display", serif;
+  font-family: var(--title-font);
   font-size: 30px;
   border: 1px solid black;
   border-radius: 3px;
@@ -163,7 +182,8 @@ header p {
 }
 
 .bio-read-more:hover {
-  background-color: #81b5b3;
+  background-color: var(--orange);
+  border: none;
   color: white;
 }
 
@@ -180,7 +200,7 @@ header p {
   text-align: center;
   padding: 10%;
   color: white;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--body-font);
 }
 .testimonials img {
   width: 100%;
@@ -199,7 +219,7 @@ header p {
   /* margin-top: 10%; */
   /* margin-bottom: 35px; */
   padding: 150px;
-  background: rgb(155 174 147);
+  background: var(--green);
 }
 .div2 a {
   font-size: 40px;
@@ -265,14 +285,9 @@ header p {
 footer {
   display: flex;
   align-items: center;
-  height: 250px;
+  height: 150px;
   padding-left: 75px;
-  background: rgb(129, 181, 179);
-  background: linear-gradient(
-    90deg,
-    rgba(129, 181, 179, 1) 0%,
-    rgb(20, 122, 119) 100%
-  );
+  background-color: var(--blue);
 }
 footer a:nth-of-type(1) {
   margin-right: 5%;
@@ -284,7 +299,7 @@ footer a:last-child {
   font-size: 40px;
   text-decoration: none;
   color: black;
-  font-family: "Playfair Display", serif;
+  font-family: var(--title-font);
   transition: 0.2s ease;
 }
 
@@ -293,8 +308,8 @@ footer a:last-child:hover {
 }
 
 footer img {
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
   object-fit: cover;
   transition: 0.3s ease;
 }
@@ -359,7 +374,7 @@ footer img:hover {
 .videos-page .title h2 {
   color: #f0f0f0;
   font-size: 2rem;
-  text-align: center;
+  text-align: left;
 }
 
 .video-gallery {
@@ -370,7 +385,7 @@ footer img:hover {
 }
 
 .video-gallery h2 {
-  font-family: "Playfair Display", serif;
+  font-family: var(--title-font);
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
   color: #333;
@@ -409,7 +424,7 @@ footer img:hover {
 }
 
 .photo-gallery h2 {
-  font-family: "Playfair Display", serif;
+  font-family: var(--title-font);
   font-size: 2.5rem;
   margin-bottom: 2rem;
   color: #333;
@@ -476,7 +491,7 @@ footer img:hover {
 }
 
 .contact-container h2 {
-  font-family: "Playfair Display", serif;
+  font-family: var(--title-font);
   font-size: 2.5rem;
   margin-bottom: 1rem;
   color: #333;
@@ -542,4 +557,44 @@ textarea:focus {
 .submit-btn:hover {
   background-color: #0f5a57;
   transform: scale(1.05);
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr 1fr;
+  }
+  .title {
+    margin: 2% 0 0 2%;
+    max-width: 80%;
+  }
+  .div1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 0;
+  }
+  .bio {
+    padding-top: 5%;
+  }
+  .bio > h3 {
+    margin: 0;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .hero-img-quote{
+    width: 100%;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    text-align: center;
+  }
+  .testimonials {
+    margin-bottom: 0;
+    row-gap: 0;
+  }
+  .div2 {
+    margin: 0;
+    flex-direction: column;
+  }
 }
