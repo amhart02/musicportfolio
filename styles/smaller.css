@@ -538,6 +538,21 @@ textarea:focus {
 .submit-btn:hover {
   background-color: var(--orange);
   transform: scale(1.05);
+}  
+.links {
+     aspect-ratio: 1 / 1;
+     width: 100%;
+     background-size: cover;
+   }
+#presskit
+{
+  background-image: url("../images/personal_headshot-1-2-small.webp");
+}
+#videos {
+  background-image: url("../images/NUOVA Flight A-2635 small.webp");
+}
+#photos {
+  background-image: url("../images/personal_headshot-6 small.webp");
 }
 
 /* Responsive Adjustments */
@@ -593,6 +608,55 @@ textarea:focus {
   }
   .div2 {
     margin: 0;
+    display: flex;
     flex-direction: column;
+    justify-content: space-around;
+  }
+  .div2 > a {
+    height: 100%;
+  }
+  .links {
+    margin-bottom: 10px;
+  }
+  .social {
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+  }
+  .social > a > img {
+    aspect-ratio: 1 / 1;
+    width: 30px;
+    height: 30px;
+    font-size: 0;
+    margin: 0;
+  }
+  .social > a {
+    font-size: 0;
+    height: 30px;
+    margin: 0;
+  }
+  footer {
+    align-items: center;
+    height: 100px;
+    padding-left: 10%;
+    justify-content: space-between;
+    margin: 0;
+  }
+  body{
+    margin: 0;
+  }
+  .testimonials {
+    height: 500px;
+  }
+  .testimonials > img {
+    border-radius: 0;
+  }
+  .bio-container-1-img {
+    display: none;
+  }
+  .bio-container-2 {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 1.2em;
   }
 }
