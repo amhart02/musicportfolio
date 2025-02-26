@@ -49,7 +49,7 @@ body {
   background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
   padding: 15px;
   border-radius: 8px;
-  z-index: 9; /* Should still be above the hero image */
+  z-index: 700; /* Should still be above the hero image */
   transition: 0.2s ease;
 }
 
@@ -144,7 +144,7 @@ header p {
 }
 
 .hero-img-quote {
-  font-size: 25px;
+  font-size: 20px;
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
 
@@ -253,6 +253,7 @@ header p {
   /* filter: brightness(0.6); */
   transition: filter 0.3s ease;
   color: white;
+  font-family: var(--title-font);
 }
 
 .links:hover {
