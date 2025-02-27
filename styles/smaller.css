@@ -326,10 +326,11 @@ footer img:hover {
 .bio-body {
   font-family: var(--body-font);
   font-size: 17.5px;
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-content: center;
   align-items: center;
-  margin: 50px;
+  margin: 40px;
 }
 
 .bio-header-image {
@@ -344,14 +345,15 @@ footer img:hover {
 
 .bio-container-1-img {
   border-radius: 100%;
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   object-fit: cover;
 }
 
 .bio-container-2 {
-  width: 700px;
+  width: 800px;
 }
+
 .bio-container-3 {
   font-family: var(--body-font);
   font-size: 17.5px;
