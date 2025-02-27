@@ -547,12 +547,15 @@ textarea:focus {
 #presskit
 {
   background-image: url("../images/personal_headshot-1-2-small.webp");
+  background-position: center;
 }
 #videos {
-  background-image: url("../images/NUOVA Flight A-2635 small.webp");
+  background-image: url("../images/NUOVA Flight A-9218 cropped.webp");
+  background-position: center;
 }
 #photos {
-  background-image: url("../images/personal_headshot-6 small.webp");
+  background-image: url("../images/personal_headshot-7 small.webp");
+  background-position: center;
 }
 
 /* Responsive Adjustments */
