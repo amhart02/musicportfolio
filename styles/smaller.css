@@ -290,6 +290,7 @@ footer {
   height: 150px;
   padding-left: 75px;
   background-color: var(--blue);
+  justify-content: space-between;
 }
 footer a:nth-of-type(1) {
   margin-right: 5%;
@@ -557,6 +558,14 @@ textarea:focus {
   background-image: url("../images/personal_headshot-7 small.webp");
   background-position: center;
 }
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer > a{
+  justify-self: flex-end;
+}
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
@@ -569,13 +578,13 @@ textarea:focus {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .photo-gallery h2 {
     font-size: 1.8rem;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
   header {
     display: grid;
     grid-template-columns: 1fr;
