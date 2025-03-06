@@ -585,13 +585,10 @@ footer > a{
   }
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .photo-gallery h2 {
     font-size: 1.8rem;
   }
-}
-
-@media screen and (max-width: 480px) {
   header {
     display: grid;
     grid-template-columns: 1fr;
@@ -637,30 +634,6 @@ footer > a{
   .links {
     margin-bottom: 10px;
   }
-  .social {
-    display: flex;
-    flex-direction: column;
-    margin: auto 0;
-  }
-  .social > a > img {
-    aspect-ratio: 1 / 1;
-    width: 30px;
-    height: 30px;
-    font-size: 0;
-    margin: 0;
-  }
-  .social > a {
-    font-size: 0;
-    height: 30px;
-    margin: 0;
-  }
-  footer {
-    align-items: center;
-    height: 100px;
-    padding-left: 10%;
-    justify-content: space-between;
-    margin: 0;
-  }
   body{
     margin: 0;
   }
@@ -677,5 +650,35 @@ footer > a{
     margin-left: 5%;
     margin-right: 5%;
     font-size: 1.2em;
+  }
+  #photoGallery {
+    object-position: right top;
+  }
+}
+
+@media (max-width: 480px) {
+  .social {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  .social > a > img {
+    aspect-ratio: 1 / 1;
+    width: 30px;
+    height: 30px;
+    font-size: 0;
+    margin: 0;
+  }
+  .social > a {
+    font-size: 0;
+    height: 30px;
+    margin: 0;
+  }
+  footer {
+    align-items: center;
+    height: 110px;
+    padding-left: 10%;
+    justify-content: space-between;
+    margin: 0;
   }
 }
