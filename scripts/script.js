@@ -14,3 +14,17 @@ document.addEventListener("DOMContentLoaded", () => {
     menuToggle.classList.remove("active");
   }
 })
+
+function bioHeader()
+{
+    const header = document.querySelector("#bio-header");
+    if(window.innerWidth <= 730)
+    {
+        header.textContent = "Michael Shoaf Countertenor"
+    } else {
+        header.textContent = "Michael Shoaf | Countertenor"
+    }
+}
+
+bioHeader();
+window.addEventListener("resize", bioHeader);

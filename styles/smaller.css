@@ -575,7 +575,7 @@ footer > a{
 }
 
 /* Responsive Adjustments */
-@media (max-width: 768px) {
+@media (max-width: 770px) {
   .photo-gallery h2 {
     font-size: 2rem;
   }
@@ -583,9 +583,14 @@ footer > a{
   .gallery-container {
     gap: 1rem;
   }
+  .bio-body {
+    width: 95%;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 600px) {
+
   .photo-gallery h2 {
     font-size: 1.8rem;
   }
@@ -656,7 +661,10 @@ footer > a{
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 550px) {
+  .bio-container > img {
+    display: none;
+  }
   .social {
     display: flex;
     flex-direction: column;
