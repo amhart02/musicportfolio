@@ -19,7 +19,7 @@ body {
   font-style: italic;
 }
 
-/* Nav */
+/* Nav-------------------------------------------------------------------------------------*/
 
 .menu {
   transition: 0.2s ease;
@@ -34,7 +34,6 @@ body {
   transform: scaleY(1.1);
 }
 
-/* Position the menu toggle button and navigation menu */
 .menu-toggle {
   position: fixed;
   top: 40px;
@@ -42,22 +41,21 @@ body {
   background: none;
   border: none;
   cursor: pointer;
-  z-index: 10; /* Ensure it's above the hero image */
+  z-index: 10;
 }
 
 .nav-menu {
   display: none;
   position: fixed;
-  top: 95px; /* Adjust to position below the hamburger icon */
-  right: 40px; /* Align with the menu button */
-  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  top: 95px; 
+  right: 40px; 
+  background-color: rgba(0, 0, 0, 0.8); 
   padding: 15px;
   border-radius: 8px;
-  z-index: 700; /* Should still be above the hero image */
+  z-index: 700; 
   transition: 0.2s ease;
 }
 
-/* Style the list items inside the navigation menu */
 .nav-menu ul {
   list-style: none;
   margin: 0;
@@ -80,12 +78,11 @@ body {
   color: var(--red);
 }
 
-/* Ensure visibility when menu is active */
 .menu-toggle.active + .nav-menu {
   display: block;
 }
 
-/* header */
+/* header--------------------------------------------------------------------------------------*/
 header {
   display: grid;
   justify-items: center;
@@ -152,7 +149,7 @@ header p {
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
 
-/* 1st div */
+/* 1st div index page---------------------------------------------------------------------------- */
 .div1 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -221,14 +218,11 @@ header p {
   border-radius: 4px;
 }
 
-/* 2nd div */
+/* 2nd div index page------------------------------------------------------------------*/
 .div2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 40px;
-  /* justify-content: space-around; */
-  /* margin-top: 10%; */
-  /* margin-bottom: 35px; */
   padding: 50px;
   background: var(--green);
 }
@@ -241,7 +235,6 @@ header p {
   overflow-clip-margin: unset;
   width: 100%;
   height: 350px;
-  /* opacity: 0.75; */
   object-fit: cover;
   justify-content: center;
 
@@ -252,9 +245,6 @@ header p {
 }
 .links a {
   text-align: center;
-  /* font-family: "Playfair Display", serif; */
-  /* text-shadow: 2px 1px 5px rgba(0, 0, 0, 0.7); */
-  /* filter: brightness(0.6); */
   transition: filter 0.3s ease;
   color: white;
   font-family: var(--title-font);
@@ -273,17 +263,13 @@ header p {
   transition: filter 0.3s ease;
 }
 
-/* .links img:hover {
-  filter: brightness(1);
-} */
-
 .div2 .links .images3 {
   color: white;
   font-size: 60px;
   z-index: 10;
 }
 
-/* footer */
+/* footer-------------------------------------------------------- */
 footer {
   display: flex;
   align-items: center;
@@ -321,7 +307,7 @@ footer img:hover {
   transform: scale(1.1);
 }
 
-/* Biography */
+/* Biography page-------------------------------------------------------------------------------------*/
 
 .bio-body h3 {
   font-family: var(--title-font);
@@ -360,7 +346,7 @@ footer img:hover {
   margin-bottom: 30px;
 }
 
-/* Videos Page */
+/* Videos Page---------------------------------------------------------------------------------------*/
 .header-image-videos {
   width: 100%;
   height: 100%;
@@ -415,7 +401,7 @@ footer img:hover {
 
 /* Photo Gallery Page Styles */
 
-/* Photo Gallery Section */
+/* Photo Gallery Section-----------------------------------------------------------------------------*/
 .photo-gallery {
   max-width: 1200px;
   margin: 3rem auto;
@@ -432,7 +418,7 @@ footer img:hover {
 
 
 
-/* Gallery Grid Layout */
+/* Gallery Grid Layout------------------------------------------------------------------------------- */
 .gallery-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -454,7 +440,6 @@ footer img:hover {
   transition: transform 0.3s ease;
 }
 
-/* Hover Effects */
 .gallery-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
@@ -464,7 +449,7 @@ footer img:hover {
   transform: scale(1.1);
 }
 
-/* Contact Section */
+/* Contact Section----------------------------------------------------------------------------------------------- */
 .contact-container {
   max-width: 800px;
   margin: 3rem auto;
@@ -489,7 +474,7 @@ footer img:hover {
   font-family: var(--body-font);
 }
 
-/* Form Styling */
+/* Form Styling--------------------------------------------------------------------------------------------------*/
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -574,8 +559,8 @@ footer > a{
   justify-self: flex-end;
 }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
+/* Responsive Adjustments -----------------------------------------------------------------------------------------*/
+@media (max-width: 770px) {
   .photo-gallery h2 {
     font-size: 2rem;
   }
@@ -583,9 +568,14 @@ footer > a{
   .gallery-container {
     gap: 1rem;
   }
+  .bio-body {
+    width: 95%;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 600px) {
+
   .photo-gallery h2 {
     font-size: 1.8rem;
   }
@@ -656,7 +646,10 @@ footer > a{
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 550px) {
+  .bio-container > img {
+    display: none;
+  }
   .social {
     display: flex;
     flex-direction: column;
