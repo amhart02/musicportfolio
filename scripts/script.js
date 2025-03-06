@@ -1,9 +1,9 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const menuToggle = document.querySelector(".menu-toggle");
-    const navMenu = document.querySelector(".nav-menu");
-  
-    window.addEventListener("scroll", closeMenu);
-    menuToggle.addEventListener("click", menuToggleFunction);
+//menu functionality
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navMenu = document.querySelector(".nav-menu");
+
+  window.addEventListener("scroll", closeMenu);
+  menuToggle.addEventListener("click", menuToggleFunction);
 
   function menuToggleFunction () {
     menuToggle.classList.toggle("active");
@@ -13,8 +13,8 @@ document.addEventListener("DOMContentLoaded", () => {
   function closeMenu () {
     menuToggle.classList.remove("active");
   }
-})
 
+//resize handling
 function bioHeader()
 {
     const header = document.querySelector("#bio-header");
