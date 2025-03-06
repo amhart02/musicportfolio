@@ -37,8 +37,8 @@ body {
 /* Position the menu toggle button and navigation menu */
 .menu-toggle {
   position: fixed;
-  top: 20px;
-  right: 20px;
+  top: 40px;
+  right: 40px;
   background: none;
   border: none;
   cursor: pointer;
@@ -48,8 +48,8 @@ body {
 .nav-menu {
   display: none;
   position: fixed;
-  top: 75px; /* Adjust to position below the hamburger icon */
-  right: 20px; /* Align with the menu button */
+  top: 95px; /* Adjust to position below the hamburger icon */
+  right: 40px; /* Align with the menu button */
   background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
   padding: 15px;
   border-radius: 8px;
@@ -72,7 +72,7 @@ body {
   text-decoration: none;
   color: white;
   font-family: var(--body-font);
-  font-size: 35px;
+  font-size: 30px;
   transition: 0.2s ease;
 }
 
@@ -109,7 +109,7 @@ header {
   color: white;
   align-self: flex-start;
   justify-self: flex-start;
-  margin: 10%;
+  margin: 40px;
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
 .title a {
@@ -325,11 +325,12 @@ footer img:hover {
 
 .bio-body {
   font-family: var(--body-font);
-  font-size: 15px;
-  display: flex;
-  justify-content: space-around;
+  font-size: 17.5px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-content: center;
   align-items: center;
-  margin: 40px 0;
+  margin: 40px;
 }
 
 .bio-header-image {
@@ -344,13 +345,20 @@ footer img:hover {
 
 .bio-container-1-img {
   border-radius: 100%;
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   object-fit: cover;
 }
 
 .bio-container-2 {
-  width: 700px;
+  width: 800px;
+}
+
+.bio-container-3 {
+  font-family: var(--body-font);
+  font-size: 17.5px;
+  margin: 0 100px;
+  margin-bottom: 50px;
 }
 
 /* Videos Page */
@@ -541,10 +549,10 @@ textarea:focus {
   transform: scale(1.05);
 }  
 .links {
-     aspect-ratio: 1 / 1;
-     width: 100%;
-     background-size: cover;
-   }
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  background-size: cover;
+}
 #presskit
 {
   background-image: url("../images/personal_headshot-1-2-small.webp");
