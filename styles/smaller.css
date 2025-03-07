@@ -420,7 +420,11 @@ footer img:hover {
 
 
 /* Gallery Grid Layout------------------------------------------------------------------------------- */
-.gallery-container {
+.photo-gallery {
+  display: flex;
+  flex-direction: column;
+}
+.gallery-images {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
