@@ -60,13 +60,15 @@ body {
 }
 
 .menu-toggle {
-  position: fixed;
-  top: 40px;
-  right: 40px;
   background: none;
   border: none;
   cursor: pointer;
   z-index: 10;
+  grid-row: 1 / 2;
+  grid-column: 3 / 4;
+  align-self: start;
+  justify-self: end;
+  margin: 40px;
 }
 
 .nav-menu {
@@ -679,7 +681,9 @@ footer > a{
   .photo-gallery {
     width: 70%;
   }
+  .testimonials img {
 
+  }
 }
 
 @media (max-width: 550px) {
