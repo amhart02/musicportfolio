@@ -417,16 +417,15 @@ footer img:hover {
   color: #333;
 }
 
-
-
 /* Gallery Grid Layout------------------------------------------------------------------------------- */
 .photo-gallery {
   display: flex;
   flex-direction: column;
+  width: 50%;
 }
 .gallery-images {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  display: flex;
+  flex-direction: column;
   gap: 1.5rem;
   justify-content: center;
 }
@@ -577,6 +576,9 @@ footer > a{
     width: 95%;
     margin: 0 auto;
   }
+  .bio-essay:last-of-type() {
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -608,7 +610,7 @@ footer > a{
     grid-row: 1/2;
   }
   .hero-img-quote{
-    width: 100%;
+    width: 90%;
     grid-row: 2/3;
     grid-column: 1/2;
     text-align: center;
@@ -649,6 +651,10 @@ footer > a{
   #photoGallery {
     object-position: right top;
   }
+  .photo-gallery {
+    width: 70%;
+  }
+
 }
 
 @media (max-width: 550px) {
