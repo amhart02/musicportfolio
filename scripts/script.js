@@ -16,17 +16,7 @@ import { boundless, nuova, headshot } from "./images.js";
     menuToggle.classList.remove("active");
   }
 
-//resize handling
-// function bioHeader()
-// {
-//     const header = document.querySelector("#bio-header");
-//     if(window.innerWidth <= 730)
-//     {
-//         header.textContent = "Michael Shoaf Countertenor"
-//     } else {
-//         header.textContent = "Michael Shoaf | Countertenor"
-//     }
-// }
+// gallery functions
 
 function initBoundless() {
   const boundlessContainer = document.querySelector(".boundless");
@@ -66,6 +56,21 @@ function photoTemplateNuova(src) {
   </div>
   `;
 }
+
+//scroll to top button
+const scrollToTopBtn = document.querySelector('.scroll-to-top');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 0) {
+    scrollToTopBtn.style.display = 'block';
+  } else {
+    scrollToTopBtn.style.display = 'none';
+  }
+});
+
+scrollToTopBtn.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
 
 // bioHeader();
 initBoundless();
