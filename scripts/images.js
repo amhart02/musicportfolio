@@ -58,15 +58,15 @@ export const headshot = [
     // "images/Headshots/personal_headshot-4-2.jpg",
     // "images/Headshots/personal_headshot-4.jpg",
     // "images/Headshots/personal_headshot-5.jpg",
-    "images/Headshots/personal_headshot-6.jpg",
+    "images/Headshots/personal_headshot-6.webp",
     // "images/Headshots/personal_headshot-7.jpg",
     // "images/Headshots/personal_headshot-8.jpg",
     // "images/Headshots/personal_headshot-9.jpg",
     // "images/Headshots/personal_headshot-10.jpg",
-    "images/Headshots/personal_headshot-11.jpg",
+    "images/Headshots/personal_headshot-11.webp",
     // "images/Headshots/personal_headshot-12.jpg",
     // "images/Headshots/personal_headshot-19.jpg",
     // "images/Headshots/personal_headshot-24.jpg",
-    "images/Headshots/personal-headshot-1-3.jpg",
+    "images/Headshots/personal-headshot-1-3.webp",
 ];
 
