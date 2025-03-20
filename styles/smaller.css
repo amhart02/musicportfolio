@@ -50,10 +50,7 @@ body {
   transition: 0.2s ease;
 }
 
-.menu > rect {
-  stroke-width: 1px;
-  stroke: black;
-}
+
 
 .menu:hover {
   transform: scaleY(1.1);
@@ -639,7 +636,7 @@ footer > a{
   .hero-img-quote{
     width: 90%;
     grid-row: 2/3;
-    grid-column: 1/2;
+    grid-column: 1/4;
     text-align: center;
   }
   .testimonials {
