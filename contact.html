@@ -36,7 +36,7 @@
       </nav>
       <img
       class="header-image contact-header-img"
-      src="images/personal_headshot-8-small.webp"
+      src="images/Headshots/personal_headshot-8.webp"
       alt="Hero Image, Michael Shoaf Headshot"
     />
     </header>
@@ -50,7 +50,6 @@
           or just to say hello, feel free to drop a message below.
         </p>
         <form action="#" method="POST" class="contact-form">
-          <!-- add security measures -->
           <div class="form-group">
             <label for="name">Your Name</label>
             <input
@@ -59,6 +58,7 @@
               name="name"
               placeholder="Enter your name"
               required
+              max-length="50" 
             />
           </div>
 
@@ -80,6 +80,7 @@
               name="message"
               rows="5"
               placeholder="Type your message here..."
+              maxlength="500"
               required
             ></textarea>
           </div>
@@ -92,12 +93,14 @@
     <!-- Footer -->
     <footer>
       <div class="social">
-        <a href="https://instagram.com"
-          ><img src="images/instagram-icon-icon-lg.webp" alt="Instagram Logo"
+        <a href="https://www.instagram.com/mike.shoaf/"
+          ><img
+            src="images/instagram-icon-icon-lg.webp"
+            alt="Black and White Vector Instagram Logo"
         /></a>
-        <a href="https://facebook.com"
-          ><img src="images/facebook.webp" alt="Facebook Logo"
-        /></a>
+        <a href="https://www.facebook.com/countertenormichaelshoaf">
+          <img src="images/facebook.webp" alt="Black and white facebook logo"/>
+        </a>
       </div>
       <a href="contact.html">Contact Me</a>
     </footer>

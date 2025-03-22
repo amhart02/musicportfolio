@@ -33,7 +33,7 @@ body {
   height: 50px;
   font-size: 20px;
   cursor: pointer;
-  display: none; /* Hidden initially */
+  display: none; 
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   transition: opacity 0.3s ease;
 }
@@ -567,15 +567,15 @@ textarea:focus {
 }
 #presskit
 {
-  background-image: url("../images/personal_headshot-1-2-small.webp");
+  background-image: url("../images/Headshots/personal_headshot-1-2.webp");
   background-position: center;
 }
 #videos {
-  background-image: url("../images/NUOVA Flight A-9218 cropped.webp");
+  background-image: url("../images/NUOVA-Flight/NUOVA\ Flight\ A-9218\ cropped.webp");
   background-position: center;
 }
 #photos {
-  background-image: url("../images/personal_headshot-7 small.webp");
+  background-image: url("../images/Headshots/personal_headshot-7.webp");
   background-position: center;
 }
 .social {
@@ -683,7 +683,7 @@ footer > a{
   }
 }
 
-@media (max-width: 550px) {
+@media screen and (max-width: 550px) {
   .bio-container > img {
     display: none;
   }
@@ -711,6 +711,9 @@ footer > a{
     justify-content: space-between;
     margin: 0;
   }
+}
+
+@media screen and (max-width: 915px) {
   .testimonials p {
     grid-column: 1/4;
 }
