@@ -565,6 +565,7 @@ textarea:focus {
   width: 100%;
   background-size: cover;
 }
+/* press kit ------------------------------------------------------------------------------------------------------------ */
 #presskit
 {
   background-image: url("../images/Headshots/personal_headshot-1-2.webp");
@@ -660,11 +661,10 @@ footer > a{
 }
 
 /* Responsive Adjustments -----------------------------------------------------------------------------------------*/
-@media (max-width: 770px) {
+@media screen and (max-width: 700px) {
   .photo-gallery h2 {
     font-size: 2rem;
   }
-
   .gallery-container {
     gap: 1rem;
   }
@@ -675,10 +675,6 @@ footer > a{
   .bio-essay:last-of-type() {
     margin-bottom: 20px;
   }
-}
-
-@media screen and (max-width: 700px) {
-
   .photo-gallery h2 {
     font-size: 1.8rem;
   }
@@ -688,7 +684,8 @@ footer > a{
     grid-template-rows: 4fr 1fr;
   }
   .title {
-    margin: 2% 0 0 2%;
+    margin-left: 15px;
+    margin-top: 15px;
     max-width: 80%;
   }
   .div1 {
@@ -751,11 +748,8 @@ footer > a{
     width: 70%;
   }
   .menu-toggle {
-    margin: 20px;
+    margin: 20px 15px;
   }
-}
-
-@media screen and (max-width: 550px) {
   .bio-container > img {
     display: none;
   }
@@ -783,10 +777,68 @@ footer > a{
     justify-content: space-between;
     margin: 0;
   }
+  .press-kit {
+    display: flex;
+    flex-direction: column;
+  }
+  .press-kit h1, .press-kit h2 {
+    font-size: 1em;
+  }
+  .press-kit-intro p{
+    font-size: .75em;
+  }
+  .testimonials p{
+    align-self: start;
+    margin: 0;
+  }
+  .testimonials img {
+    object-position: 95%;
+  }
+  .bio-header-image {
+    object-position: 40%;
+  }
+  .header-image-videos {
+    object-position: 45%;
+  }
+  .contact-header-img {
+    object-position: 17.5%;
+  }
 }
 
-@media screen and (max-width: 915px) {
+@media screen and (max-width: 1000px) {
   .testimonials p {
     grid-column: 1/4;
-}
+    align-self: start;
+    margin: 0;
+  }
+  .testimonials img {
+    object-position: 95%;
+  }
+  .bio h3{
+    font-size: 35px;
+  }
+  .bio p {
+    font-size: 20px;
+  }
+  .bio-read-more{
+    font-size: 25px;
+  }
+  .div1{
+    align-items: center;
+  }
+  .div2{
+    padding: 30px;
+  }
+  .div2 .links .images3{
+    font-size: 40px;
+  }
+  .bio-body{
+    margin: 80px;
+  }
+  .photo-gallery{
+    margin: 1rem auto;
+  }
+  #photoGallery{
+    object-position: 90%;
+  }
 }
