@@ -669,8 +669,7 @@ footer > a{
     gap: 1rem;
   }
   .bio-body {
-    width: 95%;
-    margin: 0 auto;
+    margin: 10px;
   }
   .bio-essay:last-of-type() {
     margin-bottom: 20px;
@@ -833,7 +832,7 @@ footer > a{
     font-size: 40px;
   }
   .bio-body{
-    margin: 80px;
+    margin: 20px;
   }
   .photo-gallery{
     margin: 1rem auto;
